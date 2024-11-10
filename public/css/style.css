@@ -23,10 +23,14 @@ body{
 body h1{
     color: #695AA6;
     font-family: "Baloo Tamma 2";
+    font-size: 35px;
 }
 
 .question{
     text-transform: capitalize;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    color: #474950;
 }
 
 
@@ -114,7 +118,11 @@ section{
 
 .hi span{
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 8px;
+    font-size: 20px;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    margin-bottom: 30px;
 }
 
 .hi a{
@@ -133,6 +141,12 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Open Sans";
+    font-weight: lighter;
+}
+
+.about_container span{
+    margin-bottom: 25px;
 }
 
 .about_container button{
@@ -178,12 +192,16 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 0.5px solid grey;
+    border: 0.5px solid lightgrey;
     border-radius: 2px;
 }
 
 .service_container img{
     width: 40px;
+}
+
+.service_container span{
+    margin-top: 10px;
 }
 
 /*Portfolio*/
@@ -231,7 +249,7 @@ section{
 }
 
 .hire button{
-    padding: 10px;
+    padding: 8px;
     border: none;
     border-radius: 3px;
     font-family: "Baloo Tamma 2";
@@ -392,6 +410,10 @@ footer span{
 
 /*Mobile L*/
 @media (max-width: 425px) {
+
+    section{
+        margin: 0;
+    }    
 /*Header*/
     header{
         background-image: url(/public/img/header.jpg);
@@ -405,7 +427,20 @@ footer span{
 
 /*Hi*/
     .hi{
-        height: 150px;
+        height: 200px;
+    }
+
+    .hi h2, .hi p{
+        font-size: 20px;
+        margin-bottom: -5px;
+    }
+
+    .hi span{
+        font-size: 10px;
+    }
+
+    .hi button{
+        align-self: center;
     }
 
 /*About*/
@@ -415,7 +450,11 @@ footer span{
 
 /*Service*/
     .service{
-        height: 350px;
+        height: 400px;
+    }
+
+    .service_container{
+        margin: 0;
     }
 
     .service_container div{
@@ -711,7 +750,13 @@ footer span{
 /*Hi*/
 /*About*/
 /*Service*/
+.service_container{
+    margin-top: 30px;
+}
 /*Portfolio*/
+.portfolio_container{
+    margin-top: 30px;
+}
 /*Pricing*/
     .pricing{
         height: 600px;
@@ -725,6 +770,7 @@ footer span{
     .pricing_container{
         height: 70%;
         width: 100%;
+        margin-top: 30px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -763,6 +809,10 @@ footer span{
         flex-direction: column;
     }
 /*Hire*/
+    .hire button{
+        width: 100px;
+        font-size: large;
+    }
 /*Testimonial*/
     .testimonial{
         width: 100%;
