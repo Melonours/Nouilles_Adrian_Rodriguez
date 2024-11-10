@@ -428,6 +428,7 @@ footer span{
 /*Hi*/
     .hi{
         height: 200px;
+        margin-bottom: 30px;
     }
 
     .hi h2, .hi p{
@@ -444,6 +445,14 @@ footer span{
     }
 
 /*About*/
+    .about{
+        margin-bottom: 30px;
+    }
+
+    .about span:nth-child(1) {
+        margin-bottom: 0;
+    }
+
     .about img{
         display: none;
     }
@@ -466,6 +475,7 @@ footer span{
 /*Portfolio*/
     .portfolio{
         height: 300px;
+        margin-bottom: 40px;
     }
 
     .portfolio_container img{
@@ -596,6 +606,10 @@ footer span{
 /*Tablet*/
 
 @media (min-width: 720px) and (max-width: 1000px) {
+    h1{
+        margin-bottom: 20px;
+    }
+
 /*Header*/
     header{
         background-image: url(/public/img/header.jpg);
@@ -605,6 +619,10 @@ footer span{
 
 /*Hi*/
 /*About*/
+    .about span:nth-child(1){
+        margin: 0;
+    }
+
     .about img{
         width: 300px;
     }
@@ -612,6 +630,7 @@ footer span{
     .service{
         height: 500px;
     }
+    
     .service_container div{
         margin: 20px;
     }
