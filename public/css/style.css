@@ -1,0 +1,788 @@
+@font-face {
+    font-family: "Baloo Tamma 2";
+    src: url(../font/webfonts_Baloo-Tamma-2-ExtraBold/Baloo-Tamma-2-ExtraBold.ttf.woff);
+}
+
+html, *{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body h1{
+    color: #695AA6;
+    font-family: "Baloo Tamma 2";
+}
+
+.question{
+    text-transform: capitalize;
+}
+
+
+/*Header*/
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Baloo Tamma 2";
+}
+
+nav h1{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu{
+    background: none;
+    border: none;
+}
+
+/*Main*/
+main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+
+/*Hi*/
+.hi{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hi h2, p{
+    font-family: "Baloo Tamma 2";
+}
+
+.hi p{
+    font-size: 70px;
+}
+
+.hi button{
+    padding: 10px;
+    background-color: #695AA6;
+    border: none;
+    border-radius: 20px;
+    align-self: flex-start;
+}
+
+.hi span{
+    text-transform: uppercase;
+}
+
+.hi a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/*About*/
+.about{
+    height: 350px;
+    display: flex;
+}
+
+.about_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_container button{
+    width: 110px;
+    padding: 8px;
+    color: #695AA6;
+    background-color: white;
+    border: 1px solid #695AA6;
+    border-radius: 20px;
+}
+
+.about_img_container{
+    padding: 30px;
+}
+
+.about img{
+    width: 300px;
+}
+
+/*Service*/
+.service{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: "Baloo Tamma 2";
+    color: #695AA6;
+}
+
+.service_container div{
+    width: 160px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid grey;
+    border-radius: 2px;
+}
+
+.service_container img{
+    width: 40px;
+}
+
+/*Portfolio*/
+.portfolio{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_container{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.portfolio_container img{
+    width: 200px;
+}
+
+/*Pricing*/
+.subscribe_btn{
+    color: white;
+    background-color: #695AA6;
+    border: none;
+    padding: 8px;
+}
+
+/*Hire*/
+.hire{
+    width:1024px;
+    height: 100px;
+    color: white;
+    background-color: #695AA6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hire h3{
+    font-family: "Baloo Tamma 2";
+}
+
+.hire button{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-family: "Baloo Tamma 2";
+}
+
+/*Testimonial*/
+.testimonial{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:100px;
+}
+
+.testimonial_cards img{
+    border-radius: 50%;
+}
+
+.testimonial_content{
+    border: 0.5px solid grey;
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.testimonial_name{
+    color: #695AA6;
+    font-family: "Baloo Tamma 2";
+}
+
+/*Blog*/
+.blog{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog h3{
+    font-family: "Baloo Tamma 2";
+    color: #695AA6;
+}
+
+.blog_cards{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#blog_cards_img1{
+    height: 200px;
+    width: 200px;
+    background-image: url(/public/img/img-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#blog_cards_img2{
+    height: 200px;
+    width: 200px;
+    background-image: url(/public/img/img-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.blog_cards_content{
+    width: 70%;
+    padding: 10px;
+    border: 0.5px solid grey;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.blog_cards_content i{
+    width: 10px;
+    font-size: small;
+}
+
+.blog_cards_content a{
+    text-decoration: none;
+}
+
+/*Contact*/
+.contact{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact textarea{
+    width: 60%;
+    height: 100px;
+    border: 0.5px solid grey;
+}
+
+.contact button{
+    color: #695AA6;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    border: 1px solid #695AA6;
+    border-radius: 3px;
+}
+/*Footer*/
+footer{
+    width: 80%;
+    padding: 10px;
+    border-top: 0.5px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div{
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer img{
+    width: 20px;
+}
+
+footer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_container{
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid #6c757d;
+    border-radius: 50%;
+}
+
+.icon_container img{
+    margin-bottom: -3px;
+}
+
+#copyright{
+    font-size: 15px;
+}
+
+/*Mobile L*/
+@media (max-width: 425px) {
+/*Header*/
+    header{
+        background-image: url(/public/img/header.jpg);
+        background-position: 50% 32%;
+        background-size: cover;
+    }
+
+    header h1{
+        display: none;
+    }
+
+/*Hi*/
+    .hi{
+        height: 150px;
+    }
+
+/*About*/
+    .about img{
+        display: none;
+    }
+
+/*Service*/
+    .service{
+        height: 350px;
+    }
+
+    .service_container div{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+/*Portfolio*/
+    .portfolio{
+        height: 300px;
+    }
+
+    .portfolio_container img{
+        width: 100px;
+        margin: 2px;
+    }
+
+/*Pricing*/
+    .pricing{
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing_container{
+        height: 100%;
+    }
+
+    .pricing_cards{
+        height: 33%;
+        border: 0.5px solid grey;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pricing_img{
+        width: 100px;
+    }
+
+    .pricing_img img{
+        width: 50px;
+    }
+
+    .pricing_content{
+        width: 30%;
+    }
+
+    .price_container{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*Hire*/
+    .hire{
+        width: 425px;
+    }
+
+/*Testimonial*/
+    .testimonial{
+        height: 450px;
+    }
+    
+    .testimonial_container{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .testimonial_cards{
+        height: 250px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .testimonial_cards img{
+        width: 50px;
+    }
+
+    .testimonial_content{
+        height: 110px;
+        padding: 20px 5px 10px 5px;
+    }
+
+    .testimonial_img {
+        z-index: 1;
+        position: relative;
+        top: 25px;
+        right: 10px;
+    }
+/*Blog*/
+    .blog{
+        height: 700px;
+    }
+
+    .blog_cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog_cards_content{
+        border: 0.5px solid grey;
+    }
+
+    #blog_cards_img1{
+       display: none;
+    }
+
+    #blog_cards_img2{
+        display: none;
+    }
+
+/*Contact*/
+/*Footer*/
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer div{
+        display: flex;
+        justify-content: center;
+    }
+
+    #copyright{
+        font-size: 8px;
+        margin-top: 5px;
+    }
+}
+
+/*Tablet*/
+
+@media (min-width: 720px) and (max-width: 1000px) {
+/*Header*/
+    header{
+        background-image: url(/public/img/header.jpg);
+        background-position: 50% 27%;
+        background-size: cover;
+    }
+
+/*Hi*/
+/*About*/
+    .about img{
+        width: 300px;
+    }
+/*Service*/
+    .service{
+        height: 500px;
+    }
+    .service_container div{
+        margin: 20px;
+    }
+/*Portfolio*/
+    .portfolio{
+        height: 500px;
+    }
+
+    .portfolio img{
+        margin: 5px
+    }
+/*Pricing*/
+    .pricing{
+        height: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing_container{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pricing_cards{
+        height: 100%;
+        width: 300px;
+        border: 0.5px solid grey;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pricing_img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .pricing_img img{
+        width: 40px;
+    }
+
+    .pricing_content{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .price_container{
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+/*Hire*/
+    .hire{
+        width: 720px;
+    }
+/*Testimonial*/
+    .testimonial{
+        height: 500px;
+    }
+
+    .testimonial_container{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .testimonial_cards{
+        height: 250px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .testimonial_cards img{
+        width: 50px;
+    }
+
+    .testimonial_content{
+        height: 110px;
+        padding: 20px 5px 10px 5px;
+    }
+
+    .testimonial_img {
+        z-index: 1;
+        position: relative;
+        top: 25px;
+        right: 10px;
+    }
+/*Blog*/
+    .blog{
+        height: 700px;
+    }
+    .blog_cards{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog_cards_content{
+        height: 80%;
+        width: 100%;
+        border: 0.5px solid grey;
+    }
+
+    #blog_cards_img1{
+        opacity: 70%;
+     }
+ 
+     #blog_cards_img2{
+        opacity: 70%;
+     }
+    
+/*Contact*/
+/*Footer*/
+}
+
+@media (min-width: 1024px) {
+/*Header*/
+    header{
+        background-image: url(/public/img/header.jpg);
+        background-position: 50% 26%;
+        background-size: cover;
+    }
+
+/*Hi*/
+/*About*/
+/*Service*/
+/*Portfolio*/
+/*Pricing*/
+    .pricing{
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing_container{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pricing_cards{
+        height: 100%;
+        width: 300px;
+        border: 0.5px solid grey;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .pricing_img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .pricing_img img{
+        width: 50px;
+    }
+
+    .pricing_content{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .price_container{
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+/*Hire*/
+/*Testimonial*/
+    .testimonial{
+        width: 100%;
+    }
+
+    .testimonial_container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .testimonial_cards{
+        width: 400px;
+        height: 130px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .testimonial_content{
+        height: 100px;
+        padding-left: 35px;
+    }
+
+    .testimonial_img {
+        z-index: 1;
+        position: relative;
+        left: 25px;
+    }
+
+    .testimonial_img img{
+        width: 50px;
+    }
+
+/*Blog*/
+/*Contact*/
+/*Footer*/
+}
