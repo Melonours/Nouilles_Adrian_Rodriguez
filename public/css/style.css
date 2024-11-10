@@ -226,6 +226,22 @@ section{
 }
 
 /*Pricing*/
+.pricing{
+    font-family: "Open Sans";
+    color: #585960;
+}
+
+.pricing_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing_content{
+    font-weight: lighter;
+}
+
 .subscribe_btn{
     color: white;
     background-color: #695AA6;
@@ -487,10 +503,12 @@ footer span{
     .pricing{
         height: 700px;
         width: 100%;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 12px;
     }
 
     .pricing_container{
@@ -499,7 +517,7 @@ footer span{
 
     .pricing_cards{
         height: 33%;
-        border: 0.5px solid grey;
+        border: 0.5px solid lightgrey;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -509,12 +527,18 @@ footer span{
         width: 100px;
     }
 
+    .pricing_img h1{
+        font-size: 20px;
+    }
+
     .pricing_img img{
         width: 50px;
     }
 
     .pricing_content{
         width: 30%;
+        display: flex;
+        flex-direction: column;
     }
 
     .price_container{
@@ -630,7 +654,7 @@ footer span{
     .service{
         height: 500px;
     }
-    
+
     .service_container div{
         margin: 20px;
     }
@@ -644,7 +668,7 @@ footer span{
     }
 /*Pricing*/
     .pricing{
-        height: 550px;
+        height: 650px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -663,7 +687,8 @@ footer span{
     .pricing_cards{
         height: 100%;
         width: 300px;
-        border: 0.5px solid grey;
+        border: 0.5px solid lightgrey;
+        padding: 10px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -680,8 +705,13 @@ footer span{
         width: 40px;
     }
 
+    .pricing_img h1{
+        font-size: 25px;
+    }
+
     .pricing_content{
         height: 200px;
+        font-size: small;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -692,10 +722,17 @@ footer span{
         display: flex;
         flex-direction: column;
     }
+
+    .price{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
 /*Hire*/
     .hire{
         width: 720px;
     }
+
 /*Testimonial*/
     .testimonial{
         height: 500px;
@@ -778,7 +815,7 @@ footer span{
 }
 /*Pricing*/
     .pricing{
-        height: 600px;
+        height: 650px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -789,7 +826,7 @@ footer span{
     .pricing_container{
         height: 70%;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 40px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -798,21 +835,24 @@ footer span{
     .pricing_cards{
         height: 100%;
         width: 300px;
-        border: 0.5px solid grey;
+        border: 0.5px solid lightgrey;
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
 
     .pricing_img{
         width: 100px;
         height: 100px;
+        margin-bottom: 10px;
+        
     }
 
     .pricing_img img{
         width: 50px;
+        margin-bottom: 20px;
     }
 
     .pricing_content{
@@ -824,9 +864,23 @@ footer span{
 
     .price_container{
         height: 50px;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .price{
+        font-size: 30px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    .subscribe_btn{
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
 /*Hire*/
     .hire button{
         width: 100px;
