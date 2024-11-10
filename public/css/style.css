@@ -3,6 +3,11 @@
     src: url(../font/webfonts_Baloo-Tamma-2-ExtraBold/Baloo-Tamma-2-ExtraBold.ttf.woff);
 }
 
+@font-face {
+    font-family: "Open Sans";
+    src: url(../font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
 html, *{
     padding: 0;
     margin: 0;
@@ -84,11 +89,20 @@ section{
 
 .hi h2, p{
     font-family: "Baloo Tamma 2";
+    margin-bottom: -40px;
+}
+
+.hi h2{
+    color: #585960;
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
 .hi p{
-    font-size: 70px;
+    color: #474950;
+    font-size: 80px;
 }
+
 
 .hi button{
     padding: 10px;
@@ -100,6 +114,7 @@ section{
 
 .hi span{
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .hi a{
@@ -689,7 +704,7 @@ footer span{
 /*Header*/
     header{
         background-image: url(/public/img/header.jpg);
-        background-position: 50% 26%;
+        background-position: 50% 25%;
         background-size: cover;
     }
 
