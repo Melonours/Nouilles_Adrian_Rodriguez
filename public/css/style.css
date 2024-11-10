@@ -57,6 +57,13 @@ nav h1{
 nav ul{
     display: flex;
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+nav li{
+    margin-right: 10px;
 }
 
 nav a{
@@ -385,10 +392,12 @@ section{
     height: 100px;
     border: 0.5px solid grey;
     margin: 0px 0px 30px 0px;
+    font-family: "Open Sans";
 }
 
 .contact button{
     color: #695AA6;
+    font-family: "Open Sans";
     padding: 5px;
     background-color: white;
     border: none;
@@ -434,6 +443,9 @@ footer span{
 
 #copyright{
     font-size: 15px;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    color: #6c757d;
 }
 
 /*Mobile L*/
@@ -623,6 +635,9 @@ footer span{
     }
 
 /*Contact*/
+    .contact{
+        margin: 10px 0px 30px 0px ;
+    }
 /*Footer*/
     footer{
         display: flex;
@@ -747,6 +762,7 @@ footer span{
     }
 
 /*Testimonial*/
+ /*La dispositon des éléments est faite exprès*/
     .testimonial{
         height: 500px;
     }
@@ -779,6 +795,7 @@ footer span{
         right: 10px;
     }
 /*Blog*/
+ /*La dispositon des éléments est faite exprès*/
     .blog{
         height: 700px;
     }
@@ -819,13 +836,21 @@ footer span{
 /*Hi*/
 /*About*/
 /*Service*/
-.service_container{
-    margin-top: 30px;
-}
+    .service_container{
+        margin-top: 30px;
+    }
 /*Portfolio*/
-.portfolio_container{
-    margin-top: 30px;
-}
+    .portfolio_container{
+        margin: 30px 0px 50px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .portfolio img{
+        width: 250px;
+    }
+
 /*Pricing*/
     .pricing{
         height: 650px;
