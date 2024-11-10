@@ -254,6 +254,7 @@ section{
     width:1024px;
     height: 100px;
     color: white;
+    font-family: "Open Sans";
     background-color: #695AA6;
     display: flex;
     justify-content: space-around;
@@ -677,7 +678,7 @@ footer span{
     }
 
     .pricing_container{
-        height: 70%;
+        height: 60%;
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -692,7 +693,7 @@ footer span{
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
 
@@ -885,6 +886,7 @@ footer span{
     .hire button{
         width: 100px;
         font-size: large;
+        margin-right: 140px;
     }
 /*Testimonial*/
     .testimonial{
